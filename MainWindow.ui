@@ -69,7 +69,7 @@
      <x>0</x>
      <y>0</y>
      <width>846</width>
-     <height>28</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
@@ -83,18 +83,24 @@
    <property name="floating">
     <bool>false</bool>
    </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetFeature::DockWidgetFloatable|QDockWidget::DockWidgetFeature::DockWidgetMovable</set>
+   </property>
    <property name="windowTitle">
     <string>Information</string>
-   </property>
-   <property name="dockLocation">
-    <enum>Qt::DockWidgetArea::LeftDockWidgetArea</enum>
    </property>
    <attribute name="dockWidgetArea">
     <number>1</number>
    </attribute>
    <widget class="QWidget" name="InformationDockContent">
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <layout class="QVBoxLayout" name="verticalLayout_6">
-     <item>
+     <item alignment="Qt::AlignmentFlag::AlignBottom">
       <widget class="QFrame" name="ipv4_container">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
@@ -110,16 +116,16 @@
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_5">
         <property name="leftMargin">
-         <number>0</number>
+         <number>6</number>
         </property>
         <property name="topMargin">
-         <number>0</number>
+         <number>6</number>
         </property>
         <property name="rightMargin">
-         <number>0</number>
+         <number>6</number>
         </property>
         <property name="bottomMargin">
-         <number>0</number>
+         <number>6</number>
         </property>
         <item alignment="Qt::AlignmentFlag::AlignLeft">
          <widget class="QLabel" name="ipv4_label">
@@ -170,10 +176,10 @@
        </layout>
       </widget>
      </item>
-     <item>
+     <item alignment="Qt::AlignmentFlag::AlignTop">
       <widget class="QFrame" name="ipv6_container">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -186,16 +192,16 @@
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_7">
         <property name="leftMargin">
-         <number>0</number>
+         <number>6</number>
         </property>
         <property name="topMargin">
-         <number>0</number>
+         <number>6</number>
         </property>
         <property name="rightMargin">
-         <number>0</number>
+         <number>6</number>
         </property>
         <property name="bottomMargin">
-         <number>0</number>
+         <number>6</number>
         </property>
         <item alignment="Qt::AlignmentFlag::AlignLeft">
          <widget class="QLabel" name="ipv6_label">
@@ -259,11 +265,11 @@
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetFeature::DockWidgetFloatable|QDockWidget::DockWidgetFeature::DockWidgetMovable</set>
+   </property>
    <property name="windowTitle">
     <string>Rooms</string>
-   </property>
-   <property name="dockLocation">
-    <enum>Qt::DockWidgetArea::LeftDockWidgetArea</enum>
    </property>
    <attribute name="dockWidgetArea">
     <number>1</number>
@@ -271,16 +277,16 @@
    <widget class="QWidget" name="RoomsDockContent">
     <layout class="QVBoxLayout" name="verticalLayout_7">
      <property name="leftMargin">
-      <number>0</number>
+      <number>6</number>
      </property>
      <property name="topMargin">
-      <number>0</number>
+      <number>6</number>
      </property>
      <property name="rightMargin">
-      <number>0</number>
+      <number>6</number>
      </property>
      <property name="bottomMargin">
-      <number>0</number>
+      <number>6</number>
      </property>
      <item>
       <widget class="QFrame" name="table_container">
@@ -290,7 +296,22 @@
        <property name="frameShadow">
         <enum>QFrame::Shadow::Raised</enum>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout">
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
         <item>
          <widget class="QTableWidget" name="table">
           <property name="sizePolicy">
