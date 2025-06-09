@@ -23,6 +23,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(KVPeerN
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        IpProvider.h
+        ifcfg.h
+        ipify.h
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET KVPeerN APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
